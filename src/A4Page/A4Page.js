@@ -56,6 +56,7 @@ A4Page.propTypes = {
    * The css class name of the root element.
    */
   className: PropTypes.string,
+  orientation: PropTypes.string,
 };
 
 export default A4Page;
