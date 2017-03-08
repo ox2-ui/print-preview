@@ -5,20 +5,8 @@ Print preview page React component.
 
 ## Features
 
-* **A4 Page**  Portrait & Landscape
+* **A4 Page**  Portrait & Landscape print review page wrapper.
 
-## Usage
-```
-import A4Page from @ox2/print-preview/A4Page
-
-<A4Page orientation="landscape">
-  <YourContent />
-</A4Page>
-
-<A4Page orientation="portrait">
-  <YourContent />
-</A4Page>
-```
 
 ## Installation
 Install using [npm](http://npmjs.com):
@@ -28,6 +16,21 @@ npm install @ox2/print-preview --save
 Install using [yarn](http://yarnpkg.com):
 ```
 yarn add @ox2/print-preview
+```
+
+## Usage
+```
+import A4Page from @ox2/print-preview/A4Page
+
+// Landscape layout
+<A4Page landscape={true}>
+  <YourContent />
+</A4Page>
+
+// Portrait layout
+<A4Page>
+  <YourContent />
+</A4Page>
 ```
 
 ## Change Log

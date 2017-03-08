@@ -44,7 +44,7 @@ A4Page.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * If set to true page is set to landscape orientation
+   * If set to true page renders in landscape orientation
    */
   landscape: PropTypes.bool,
 };
