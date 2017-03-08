@@ -5,9 +5,21 @@ import A4Page from './A4Page';
 
 const handler = () => true;
 
-it('renders correctly', () => {
+it('renders landscape correctly', () => {
   const wrapper = mount(
-    <A4Page />
+    <A4Page landscape={true}>
+      <div>Children</div>
+    </A4Page>
+  );
+
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('renders portrait correctly', () => {
+  const wrapper = mount(
+    <A4Page>
+      <div>Children</div>
+    </A4Page>
   );
 
   expect(wrapper).toMatchSnapshot();

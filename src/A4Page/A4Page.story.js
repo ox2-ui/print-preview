@@ -4,12 +4,12 @@ import A4Page from './A4Page';
 
 storiesOf('A4Page', module)
   .add('landscape', () => (
-    <A4Page orientation="landscape">
+    <A4Page landscape={true}>
       <div style={{backgroundColor: 'THISTLE', height: '100%'}} />
     </A4Page>
   ))
   .add('portrait', () => (
-    <A4Page orientation="portrait">
+    <A4Page>
       <div style={{backgroundColor: 'MEDIUMAQUAMARINE', height: '100%'}} />
     </A4Page>
   ));

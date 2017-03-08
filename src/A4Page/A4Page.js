@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import classNames from 'classnames';
 
 const styles = {
   wrapper: {
@@ -22,24 +21,12 @@ const styles = {
 /**
  * A4Page Component
  */
-const A4Page = (props) => {
-  const { className: classNameProp, orientation, children } = props;
-
-  const className = classNames(
-    classNameProp
-  );
-
-  let size = {};
-
-  if (orientation === 'landscape') {
-    size = { height: '210mm', width: '297mm' };
-  } else {
-    size = { height: '297mm', width: '210mm' };
-  }
+const A4Page = ({ className, landscape, children }) => {
+  const size = landscape ? { height: '210mm', width: '297mm' } : { height: '297mm', width: '210mm' };
 
   return (
     <div className={className}>
-      <div style={styles.label}>A4 {orientation} preview</div>
+      <div style={styles.label}>A4 {landscape ? 'landscape' : 'portrait'} preview</div>
       <div style={{...styles.wrapper, ...size}}>
         {children}
       </div>
@@ -51,12 +38,15 @@ A4Page.propTypes = {
   /**
    * The contents of the `A4Page`.
    */
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   /**
    * The css class name of the root element.
    */
   className: PropTypes.string,
-  orientation: PropTypes.string,
+  /**
+   * If set to true page is set to landscape orientation
+   */
+  landscape: PropTypes.bool,
 };
 
 export default A4Page;
