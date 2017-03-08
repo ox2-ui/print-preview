@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders landscape correctly 1`] = `
+<A4Page
+  landscape={true}
+>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "DARKGRAY",
+          "fontFamily": "Roboto Condensed, Sans Serif",
+          "fontSize": "16px",
+          "left": "0",
+          "marginLeft": "20px",
+          "marginTop": "10px",
+          "position": "absolute",
+          "textTransform": "capitalize",
+          "top": "0",
+        }
+      }
+    >
+      A4 
+      landscape
+       preview
+    </div>
+    <div
+      style={
+        Object {
+          "border": "1px dashed GAINSBORO",
+          "height": "210mm",
+          "margin": "40px 20px 20px 20px",
+          "width": "297mm",
+        }
+      }
+    >
+      <div>
+        Children
+      </div>
+    </div>
+  </div>
+</A4Page>
+`;
+
+exports[`renders portrait correctly 1`] = `
+<A4Page>
+  <div>
+    <div
+      style={
+        Object {
+          "color": "DARKGRAY",
+          "fontFamily": "Roboto Condensed, Sans Serif",
+          "fontSize": "16px",
+          "left": "0",
+          "marginLeft": "20px",
+          "marginTop": "10px",
+          "position": "absolute",
+          "textTransform": "capitalize",
+          "top": "0",
+        }
+      }
+    >
+      A4 
+      portrait
+       preview
+    </div>
+    <div
+      style={
+        Object {
+          "border": "1px dashed GAINSBORO",
+          "height": "297mm",
+          "margin": "40px 20px 20px 20px",
+          "width": "210mm",
+        }
+      }
+    >
+      <div>
+        Children
+      </div>
+    </div>
+  </div>
+</A4Page>
+`;
