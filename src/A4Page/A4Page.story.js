@@ -12,4 +12,11 @@ storiesOf('A4Page', module)
     <A4Page>
       <div style={{backgroundColor: 'MEDIUMAQUAMARINE', height: '100%'}} />
     </A4Page>
+  ))
+  .add('inside scrollable window', () => (
+    <div style={{width: '500px', height: '700px', overflow: 'scroll', border: '2px solid grey'}}>
+      <A4Page>
+        <div style={{backgroundColor: 'MEDIUMAQUAMARINE', height: '100%'}} />
+      </A4Page>
+    </div>
   ));

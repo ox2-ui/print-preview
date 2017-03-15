@@ -4,16 +4,23 @@ exports[`renders landscape correctly 1`] = `
 <A4Page
   landscape={true}
 >
-  <div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "position": "relative",
+      }
+    }
+  >
     <div
       style={
         Object {
           "color": "DARKGRAY",
-          "fontFamily": "Roboto Condensed, Sans Serif",
+          "fontFamily": "Roboto Condensed, sans-serif",
           "fontSize": "16px",
           "left": "0",
-          "marginLeft": "20px",
-          "marginTop": "10px",
+          "marginLeft": "22px",
+          "marginTop": "12px",
           "position": "absolute",
           "textTransform": "capitalize",
           "top": "0",
@@ -27,15 +34,22 @@ exports[`renders landscape correctly 1`] = `
     <div
       style={
         Object {
-          "border": "1px dashed GAINSBORO",
-          "height": "210mm",
-          "margin": "40px 20px 20px 20px",
-          "width": "297mm",
+          "padding": "40px 20px 20px 20px",
         }
       }
     >
-      <div>
-        Children
+      <div
+        style={
+          Object {
+            "border": "1px dashed GAINSBORO",
+            "height": "210mm",
+            "width": "297mm",
+          }
+        }
+      >
+        <div>
+          Children
+        </div>
       </div>
     </div>
   </div>
@@ -44,16 +58,23 @@ exports[`renders landscape correctly 1`] = `
 
 exports[`renders portrait correctly 1`] = `
 <A4Page>
-  <div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "position": "relative",
+      }
+    }
+  >
     <div
       style={
         Object {
           "color": "DARKGRAY",
-          "fontFamily": "Roboto Condensed, Sans Serif",
+          "fontFamily": "Roboto Condensed, sans-serif",
           "fontSize": "16px",
           "left": "0",
-          "marginLeft": "20px",
-          "marginTop": "10px",
+          "marginLeft": "22px",
+          "marginTop": "12px",
           "position": "absolute",
           "textTransform": "capitalize",
           "top": "0",
@@ -67,15 +88,22 @@ exports[`renders portrait correctly 1`] = `
     <div
       style={
         Object {
-          "border": "1px dashed GAINSBORO",
-          "height": "297mm",
-          "margin": "40px 20px 20px 20px",
-          "width": "210mm",
+          "padding": "40px 20px 20px 20px",
         }
       }
     >
-      <div>
-        Children
+      <div
+        style={
+          Object {
+            "border": "1px dashed GAINSBORO",
+            "height": "297mm",
+            "width": "210mm",
+          }
+        }
+      >
+        <div>
+          Children
+        </div>
       </div>
     </div>
   </div>
