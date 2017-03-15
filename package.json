@@ -1,6 +1,6 @@
 {
   "name": "@ox2/print-preview",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Print preview page React component.",
   "repository": {
     "type": "git",
