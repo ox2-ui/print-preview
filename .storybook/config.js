@@ -12,5 +12,4 @@ setOptions({
   name: 'print-preview',
 });
 
-
 configure(loadStories, module);

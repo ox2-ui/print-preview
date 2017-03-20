@@ -9,7 +9,7 @@ it('renders landscape correctly', () => {
   const wrapper = mount(
     <A4Page landscape={true}>
       <div>Children</div>
-    </A4Page>
+    </A4Page>,
   );
 
   expect(wrapper).toMatchSnapshot();
@@ -19,7 +19,7 @@ it('renders portrait correctly', () => {
   const wrapper = mount(
     <A4Page>
       <div>Children</div>
-    </A4Page>
+    </A4Page>,
   );
 
   expect(wrapper).toMatchSnapshot();

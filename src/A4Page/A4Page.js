@@ -28,13 +28,20 @@ const styles = {
  * A4Page Component
  */
 const A4Page = ({ className, style, landscape, children }) => {
-  const size = landscape ? { height: '210mm', width: '297mm' } : { height: '297mm', width: '210mm' };
+  const size = landscape
+    ? { height: '210mm', width: '297mm' }
+    : { height: '297mm', width: '210mm' };
 
   return (
-    <div className={className} style={{...styles.wrapper, ...style}}>
-      <div style={styles.label}>A4 {landscape ? 'landscape' : 'portrait'} preview</div>
+    <div
+      className={className}
+      style={{ ...styles.wrapper, ...style }}
+    >
+      <div style={styles.label}>
+        A4 {landscape ? 'landscape' : 'portrait'} preview
+      </div>
       <div style={styles.wrapperInner}>
-        <div style={{...styles.pageWrapper, ...size}}>
+        <div style={{ ...styles.pageWrapper, ...size }}>
           {children}
         </div>
       </div>
