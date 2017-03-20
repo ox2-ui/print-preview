@@ -66,7 +66,7 @@ module.exports = {
     'no-unreachable': 'error',
     'no-var': 'error',
     'one-var': ['error', 'never'],
-    'operator-linebreak': ['error', 'after'],
+    'operator-linebreak': ['off', 'after'],
     'padded-blocks': ['error', 'never'],
     'prefer-arrow-callback': 'off', // Wishlist, one day
     'prefer-const': 'error',
