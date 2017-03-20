@@ -2,7 +2,7 @@
 
 exports[`renders landscape correctly 1`] = `
 <A4Page
-  landscape={true}
+  orientation="landscape"
 >
   <div
     style={
@@ -29,7 +29,7 @@ exports[`renders landscape correctly 1`] = `
     >
       A4 
       landscape
-       preview
+       preview:
     </div>
     <div
       style={
@@ -57,7 +57,9 @@ exports[`renders landscape correctly 1`] = `
 `;
 
 exports[`renders portrait correctly 1`] = `
-<A4Page>
+<A4Page
+  orientation="portrait"
+>
   <div
     style={
       Object {
@@ -83,7 +85,7 @@ exports[`renders portrait correctly 1`] = `
     >
       A4 
       portrait
-       preview
+       preview:
     </div>
     <div
       style={

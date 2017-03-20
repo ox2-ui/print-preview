@@ -27,18 +27,22 @@ const styles = {
 /**
  * A4Page Component
  */
-const A4Page = ({ className, style, landscape, children }) => {
-  const size = landscape
-    ? { height: '210mm', width: '297mm' }
-    : { height: '297mm', width: '210mm' };
-
+const A4Page = (
+  { className, style, orientation, children },
+) => {
+  let size = {};
+  if (orientation === 'landscape') {
+    size = { height: '210mm', width: '297mm' };
+  } else if (orientation === 'portrait') {
+    size = { height: '297mm', width: '210mm' };
+  }
   return (
     <div
       className={className}
       style={{ ...styles.wrapper, ...style }}
     >
       <div style={styles.label}>
-        A4 {landscape ? 'landscape' : 'portrait'} preview
+        A4 {orientation} preview:
       </div>
       <div style={styles.wrapperInner}>
         <div style={{ ...styles.pageWrapper, ...size }}>
@@ -47,6 +51,10 @@ const A4Page = ({ className, style, landscape, children }) => {
       </div>
     </div>
   );
+};
+
+A4Page.defaultProps = {
+  orientation: 'portrait',
 };
 
 A4Page.propTypes = {
@@ -59,9 +67,9 @@ A4Page.propTypes = {
    */
   className: PropTypes.string,
   /**
-   * If set to true page renders in landscape orientation
+   * Page orientation
    */
-  landscape: PropTypes.bool,
+  orientation: PropTypes.oneOf(['landscape', 'portrait']).isRequired,
   /**
    * Override inline-styles of the root element.
    */

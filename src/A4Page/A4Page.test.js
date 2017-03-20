@@ -7,7 +7,7 @@ const handler = () => true;
 
 it('renders landscape correctly', () => {
   const wrapper = mount(
-    <A4Page landscape={true}>
+    <A4Page orientation={'landscape'}>
       <div>Children</div>
     </A4Page>,
   );
@@ -17,7 +17,7 @@ it('renders landscape correctly', () => {
 
 it('renders portrait correctly', () => {
   const wrapper = mount(
-    <A4Page>
+    <A4Page orientation={'portrait'}>
       <div>Children</div>
     </A4Page>,
   );
