@@ -1,3 +1,5 @@
+### Package is no longer maintaned.
+
 # print-preview
 ![NPM version](https://img.shields.io/npm/v/@ox2/print-preview.svg?style=flat)
 
@@ -38,3 +40,4 @@ Changes are tracked in the [CHANGELOG.md](https://github.com/ox2/print-preview/t
 
 ## License
 [MIT](https://github.com/ox2/print-preview/tree/master/LICENSE)
+
